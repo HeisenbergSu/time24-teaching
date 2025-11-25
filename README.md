@@ -91,21 +91,7 @@ npm run build
 
 ### 跨平台打包（Windows / macOS）
 
-系统支持一键打包为可执行文件，适配 Windows 和 macOS 操作系统。
-
-#### Windows 平台打包
-
-1. **使用批处理脚本（推荐）**：
-   ```bash
-   双击 一键打包.bat
-   ```
-
-2. **使用命令行**：
-   ```bash
-   python build_project.py
-   ```
-
-打包完成后，在 `release/Windows` 目录下找到打包好的程序。
+系统支持一键打包为可执行文件，适配 macOS 操作系统。
 
 #### macOS 平台打包
 
