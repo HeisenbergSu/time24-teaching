@@ -154,9 +154,22 @@ jobs:
         retention-days: 30
     
     - name: Create Release
-      uses: softprops/action-gh-release@v2
-      with:
-        files: release/macOS/*
+      id: create_release
+      uses: actions/create-release@v1
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        tag_name: ${{ github.ref_name }}
+        release_name: Release ${{ github.ref_name }}
+        body: |
+          ## 版本 ${{ github.ref_name }}
+          
+          ### 更新内容
+          - 自动化构建发布
+          - 包含 macOS 版本
+          
+          ### 使用说明
+          请参考 release 中的使用说明文件
+        draft: false
+        prerelease: false
 
