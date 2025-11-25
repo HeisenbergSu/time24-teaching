@@ -162,8 +162,7 @@ jobs:
         tag_name: ${{ github.ref_name }}
         release_name: Release ${{ github.ref_name }}
         body: |
-          ## 版本 ${{ github.ref_name }}
-          
+          ## 版本 ${{ github.ref_name }}  
           ### 更新内容
           - 自动化构建发布
           - 包含 macOS 版本
