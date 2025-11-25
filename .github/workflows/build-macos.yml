@@ -87,9 +87,9 @@ jobs:
                 
                 chmod +x release/macOS/启动系统.sh
             
-            - name: Create usage instructions
-              run: |
-                cat > release/macOS/使用说明.txt << 'EOF'
+    - name: Create usage instructions
+      run: |
+        cat > release/macOS/使用说明.txt << 'EOF'
         ═══════════════════════════════════════════════════
             24时计时法教学系统 - 使用说明 (macOS)
         ═══════════════════════════════════════════════════
